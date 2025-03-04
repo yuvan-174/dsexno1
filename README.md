@@ -1,13 +1,13 @@
 # Exno:1
 Data Cleaning Process
 
-# AIM
+# AIM:
 To read the given data and perform data cleaning and save the cleaned data to a file.
 
-# Explanation
+# Explanation:
 Data cleaning is the process of preparing data for analysis by removing or modifying data that is incorrect ,incompleted , irrelevant , duplicated or improperly formatted. Data cleaning is not simply about erasing data ,but rather finding a way to maximize datasets accuracy without necessarily deleting the information.
 
-# Algorithm
+# Algorithm:
 STEP 1: Read the given Data
 
 STEP 2: Get the information about the data
@@ -20,8 +20,12 @@ STEP 5: Remove outliers using IQR
 
 STEP 6: Use zscore of to remove outliers
 
-# Coding and Output
-# Data Cleaning
+# Coding and Output:
+```
+Developed by: YUVAN SUNDAR S
+RegisterNumber: 212223040250 
+```
+# Data Cleaning:
 ```py
 import pandas as pd
 df=pd.read_csv("/content/SAMPLEIDS.csv")
@@ -71,7 +75,7 @@ df.fillna({'NAME':'SAM','GENDER':'MALE','ADDRESS':'TAMBARAM','M1':80.0,'M2':85.,
 ```
 ![image](https://github.com/user-attachments/assets/c6875c74-d196-437a-a1b5-553b3954cc8a)
 
-# IQR(Inter Quartile Range)
+# IQR(Inter Quartile Range):
 
 ```py
 ir=pd.read_csv("/content/iris.csv")
@@ -115,6 +119,7 @@ sns.boxplot(x='sepal_width',data=delid)
 ```
 ![image](https://github.com/user-attachments/assets/33a48de0-73d4-4097-8ce1-40f0442a107b)
 
+# Z-Score:
 ```py
 import matplotlib.pyplot as plt
 import scipy.stats as stats
@@ -130,5 +135,5 @@ z
 ```
 ![image](https://github.com/user-attachments/assets/195da89e-b358-446b-b846-6407ab533893)
 
-# Result
+# Result:
 Thus the data is cleaned and Outlayer is detected and removed using IQR and Z-score method.
