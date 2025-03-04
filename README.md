@@ -154,6 +154,11 @@ z
 ```
 ![image](https://github.com/user-attachments/assets/195da89e-b358-446b-b846-6407ab533893)
 
+```py
+df1= zdata[z<3]
+df1
+```
+![image](https://github.com/user-attachments/assets/89fb05ec-9a44-4eda-a337-247bbd8f906c)
 
 # Result:
 Thus the data is cleaned and Outlayer is detected and removed using IQR and Z-score method.
